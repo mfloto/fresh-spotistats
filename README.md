@@ -1,11 +1,6 @@
-# fresh project
-
-### Usage
-
-Start the project:
-
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+## TODO
+- [ ] README
+- [ ] Comments
+- [ ] Separate UI
+- [ ] Optimize for Desktop
+- [ ] (Get extended quota from Spotify)
