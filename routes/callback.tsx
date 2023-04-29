@@ -8,11 +8,11 @@ import {
   getUserInfo,
 } from "../helpers/spotify_api.ts";
 import { TopArtists } from "../types/artists.ts";
-import { user } from "../types/user.ts";
+import { User } from "../types/user.ts";
 import Home from "../islands/main.tsx";
 
 export interface ResponseStats {
-  user: user;
+  user: User;
   top_songs: TopSongs[];
   top_artists: TopArtists[];
 }
@@ -43,7 +43,7 @@ export const handler: Handlers<ResponseStats> = {
       ),
     );
 
-    const user: user = await getUserInfo(credentials.access_token);
+    const user: User = await getUserInfo(credentials.access_token);
 
     const props: ResponseStats = {
       user,

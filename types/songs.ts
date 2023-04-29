@@ -1,14 +1,14 @@
-import { album } from "./album.ts";
-import { shortArtist } from "./artists.ts";
+import { Album } from "./album.ts";
+import { ShortArtist } from "./artists.ts";
 
-export interface song {
-  album: album;
-  artists: shortArtist[];
+export interface Song {
+  album: Album;
+  artists: ShortArtist[];
   available_markets: string[];
   disc_number: number;
   duration_ms: number;
   explicit: boolean;
-  //external_ids: { isrc: string };
+  //external_ids: { isrc: string }; //This object might contain other ids, such as UPC, EAN, or ISRC.
   external_urls: { spotify: string };
   href: string;
   id: string;
@@ -28,5 +28,5 @@ export interface TopSongs {
   offset: number;
   previous: string;
   total: number;
-  items: song[];
+  items: Song[];
 }

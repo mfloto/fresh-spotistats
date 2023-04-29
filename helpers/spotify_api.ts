@@ -1,6 +1,6 @@
 import { TopArtists } from "../types/artists.ts";
 import { TopSongs } from "../types/songs.ts";
-import { user } from "../types/user.ts";
+import { User } from "../types/user.ts";
 
 export function getTopSongs(
   token: string,
@@ -34,7 +34,7 @@ export function getTopArtists(
   ).then((res) => res.json());
 }
 
-export function getUserInfo(token: string): Promise<user> {
+export function getUserInfo(token: string): Promise<User> {
   return fetch(`https://api.spotify.com/v1/me`, {
     headers: {
       Authorization: `Bearer ${token}`,

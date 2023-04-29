@@ -1,6 +1,6 @@
-import { shortArtist } from "./artists.ts";
+import { ShortArtist } from "./artists.ts";
 
-export interface album {
+export interface Album {
   album_type: string;
   total_tracks: number;
   available_markets: string[];
@@ -13,5 +13,5 @@ export interface album {
   release_date_precision: string;
   type: string;
   uri: string;
-  artists: shortArtist[];
+  artists: ShortArtist[];
 }

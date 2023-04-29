@@ -1,4 +1,4 @@
-export interface user {
+export interface User {
   display_name: string;
   external_urls: { spotify: string };
   followers: { href: string; total: number };

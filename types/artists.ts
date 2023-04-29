@@ -5,10 +5,10 @@ export interface TopArtists {
   offset: number;
   previous: string;
   total: number;
-  items: artist[];
+  items: Artist[];
 }
 
-export interface artist {
+export interface Artist {
   external_urls: { spotify: string };
   followers: { href: string; total: number };
   genres: string[];
@@ -21,7 +21,7 @@ export interface artist {
   uri: string;
 }
 
-export interface shortArtist {
+export interface ShortArtist {
   external_urls: { spotify: string };
   href: string;
   id: string;
